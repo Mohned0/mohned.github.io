@@ -52,7 +52,28 @@
     <img src="certificate1.jpg" alt="GIS Certificate" style="width: 100%; max-width: 500px; margin-top: 15px; border-radius: 8px;">
   </div>
 </section>
-
+<!-- Button to open modal -->
+<button onclick="document.getElementById('certificatesModal').style.display='block'" 
+        style="padding:10px 20px; background:#4ea1f3; color:white; border:none; border-radius:5px; cursor:pointer;">
+  🎓 Show Certificates
+</button>
+    <!-- Modal Window -->
+<div id="certificatesModal" style="display:none; position:fixed; z-index:10; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8);">
+  <div style="background-color:#111; margin:10% auto; padding:20px; border-radius:10px; width:90%; max-width:600px; color:white; position:relative;">
+    
+    <!-- Close button -->
+    <span onclick="document.getElementById('certificatesModal').style.display='none'" 
+          style="position:absolute; top:10px; right:20px; color:#ccc; font-size:24px; cursor:pointer;">&times;</span>
+    
+    <!-- Certificate content -->
+    <h2 style="color:#4ea1f3;">My Certificates</h2>
+    <h3>GIS, Mapping, and Spatial Analysis</h3>
+    <p><strong>Institution:</strong> University of Toronto (via Coursera)</p>
+    <p><strong>Date:</strong> December 21, 2024</p>
+    <p>This certificate was awarded upon successful completion of a specialization focused on GIS, mapping, spatial thinking, and geospatial analysis using ArcGIS and other tools.</p>
+    <img src="GIS_Certificate.jpg" alt="GIS Certificate" style="width:100%; max-width:500px; margin-top:15px; border-radius:8px;">
+  </div>
+</div>
     <footer>
       <p>© 2025 Mohaned Abdallh. All rights reserved.</p>
     </footer>
